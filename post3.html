@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Profile Page - Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper" class="fade-in">
+
+			<!-- Header -->
+				<header id="header">
+					<a href="index.html" class="logo">Home</a>
+				</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">December 1, 2021</span>
+									<h1>Granger Causality Test<br />
+									</h1>
+									<p>In this post I use a Granger causality test to further uncover whether a causal relationship between cryptocurrency prices, stock prices, and google trends is feasible.</p>
+								</header>
+								<div class="image main"><img src="images/Graph.jpg" alt="" /></div>
+								<h2>Granger Causality</h2>
+								<p>To further uncover possible causal relationships, I use time series data to perform Granger causality tests.  While a Granger causality test does not imply a causal relationship between two variables, it can be used to show one time series is useful in forecasting the other. In the context of cryptocurrency, it may be useful to show that stock market price increases consistently occur a few days before cryptocurrency prices increase. By knowing this information, investors may be able anticipate changes in the market a few days or hours before and invest accordingly.</p>
+								<p>In the first test, I use the average Google Trends index and log average cryptocurrency price across all cryptocurrencies.  The results of the test show both cryptocurrency prices Granger cause changes in Google Trends Index, and Google Trends Index Granger caused changes in cryptocurrency prices, although slightly less significant.  Because the results are significant in both directions, I once again may conclude that we are simply seeing a high correlation between two variables. However, given the results are more significant in the Google Trends index on log average cryptocurrency price, perhaps with more granular data (hourly), we would see a relationship that exists only in one direction.</p>
+								<div class="image main"><img src="images/LogBTCLogIXIC.png" alt="" /></div>
+								<p>Second, I perform a Granger Causality test to see if the Nasdaq stock market is useful for forecasting changes in cryptocurrency prices. My results indicate that the Nasdaq stock market index Granger causes changes in cryptocurrency prices, however cryptocurrency prices do not Granger cause changes in the Nasdaq stock market index. Many people have created trading algorithms and bots that use this information. By knowing stock market prices will increase a few days or hours before cryptocurrency prices increase, they take advantage of this lag in changes in hopes of increasing their return.  While the concept seems good in theory, the market remains too volatile to make this trading technique consistently profitable.</p>
+								<p>As mentioned before, Granger causality test certainly does not mean causality, the test can be used to determine if one time series is useful for forecasting another.  With these results we may suspect a possible causal relationship, however, given the robustness of our results we may only conclude there is a high correlation between these variables. With more data and increased granularity, we would likely be able to paint a more comprehensive and accurate picture of how the variables interact.</p>
+							</section>
+
+					<!-- Posts -->
+					<section class="posts">
+						<article>
+							<header>
+								<span class="date">November 4, 2021</span>
+								<h2><a href="#">Cryptocurrency<br />
+								Data Collection</a></h2>
+							</header>
+							<a href="post1.html" class="image fit"><img src="images/DataCollection.jpg" alt="" /></a>
+							<p>Overview of the cryptocurrency market and the importance of this type of research. I also discuss the process of collecting and manipulating cryptocurrency data.</p>
+							<ul class="actions special">
+								<li><a href="post1.html" class="button">Read More</a></li>
+							</ul>
+						</article>
+						<article>
+							<header>
+								<span class="date">November 22, 2021</span>
+								<h2><a href="#">Cryptocurrency<br />
+								Fixed Effects Model</a></h2>
+							</header>
+							<a href="post2.html" class="image fit"><img src="images/GoogleSearch.jpg" alt="" /></a>
+							<p>In this post I discuss the results of a fixed effects model using a balanced panel data set. In this post, I also showcase a transformable line graph that I built using Tableau.</p>
+							<ul class="actions special">
+								<li><a href="post2.html" class="button">Read More</a></li>
+							</ul>
+						</article>
+						<article>
+							<header>
+								<span class="date">December 1, 2021</span>
+								<h2><a href="#">Granger Causality<br />
+								</a></h2>
+							</header>
+							<a href="post3.html" class="image fit"><img src="images/Graph.jpg" alt="" /></a>
+							<p>What can a Granger causality test tell us about the relatonship between Google search, stock price and Bitcoin price data.</p>
+							<ul class="actions special">
+								<li><a href="post3.html" class="button">Read More</a></li>
+							</ul>
+						</article>
+						<article>
+							<header>
+								<span class="date">December 9, 2021</span>
+								<h2><a href="#">CryptoFord<br />
+								</a></h2>
+							</header>
+							<a href="post4.html" class="image fit"><img src="images/Benford.jpg" alt="" /></a>
+							<p>Using current cryptocurrency data, I show that digtial currency prices follow Benford's Law.</p>
+							<ul class="actions special">
+								<li><a href="post4.html" class="button">Read More</a></li>
+							</ul>
+						</article>			
+					</div>
+
+				<!-- Copyright -->
+				<div id="copyright">
+					<ul><li>Website Created By Zachary Zeller</li></ul>
+				</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

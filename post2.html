@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Profile Page - Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper" class="fade-in">
+
+			<!-- Header -->
+				<header id="header">
+					<a href="index.html" class="logo">Home</a>
+				</header>	
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">November 22, 2021</span>
+									<h1>Cryptocurreny<br />
+									Main Anlysis Results</h1>
+									<p>Using a balanced panel data set and a fixed effects model to discuss possible relationships between Google Trends data, stock market prices, the 2020 election and cryptocurrency price changes.</p>
+								</header>
+								<div class="image main"><img src="images/GoogleSearch.jpg" alt="" /></div>
+								<h2>Fixed Effects Model</h2>
+								<p>Using the balanced panel data structure, I run a fixed effects regression models to control for the unobserved variables of each cryptocurrency that do not change over time. For my dependent variable, I transform open price to log open price to account for the large difference in prices across cryptocurrencies.</p>
+								<div class="image main"><img src="images/FETable.png" alt="" /></div>
+								<p>In the results above, we see a positive correlation among all independent variables except the election variable. With over 14,000 observations and 8 groups, the index and stock market results prove to be highly significant at the 99% confidence interval. When adding additional control variables, such as the search term for “Cryptocurrency” the lagged Google Trends variable continues to be significant and positively correlated. This three day lagged Google Trends Index variable may indicate a possible causal effect of Google searches on changes in cryptocurrency prices. However, it is difficult to conclude this is indeed a causal relationship for many reasons.</p>
+								<p>There are many possible variables and confounding variables that affect changes in cryptocurrency prices and the Google Trends Index. For example, a news article may be released about a major tech company that will accept or back a particular cryptocurrency. This would lead to many people both searching for cryptocurrency term, while also jolting investors into action to purchase digital currencies. Second, it is impossible to say whether people searching for cryptocurrencies is the reason for change in prices or if the true relationship is the other way around. The reality is, cryptocurrency prices and Google searches are likely mutually responsive, meaning changes in prices lead to changes in searches and changes in searches lead to changes in prices.</p>
+								<div class='tableauPlaceholder' id='viz1638910337811' style='position: relative'><noscript><a href='#'><img
+								alt='Dashboard 2 ' 
+								src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Price_and_Index_GT_Dynamic&#47;Dashboard2&#47;1_rss.png' 
+								style='border: none' /></a></noscript><object 
+								class='tableauViz'  
+								style='display:none;'><param 
+								name='host_url' 
+								value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param 
+								name='embed_code_version' 
+								value='3' /> <param 
+								name='site_root' 
+								value='' /><param name='name' 
+								value='Price_and_Index_GT_Dynamic&#47;Dashboard2' /><param 
+								name='tabs' 
+								value='no' /><param 
+								name='toolbar' 
+								value='yes' /><param 
+								name='static_image' 
+								value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Price_and_Index_GT_Dynamic&#47;Dashboard2&#47;1.png' /> <param 
+								name='animate_transition' 
+								value='yes' /><param 
+								name='display_static_image' 
+								value='yes' /><param 
+								name='display_spinner' 
+								value='yes' /><param 
+								name='display_overlay' 
+								value='yes' /><param 
+								name='display_count' 
+								value='yes' /><param 
+								name='language' 
+								value='en-US' /></object></div>                <script 
+								type='text/javascript'>                    var 
+								divElement = document.getElementById('viz1638910337811');                    
+								var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     
+								var scriptElement = document.createElement('script');                    
+								scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+								vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+								<br />
+								<p>The next relationship I estimate is between tech company stock prices and log cryptocurrency prices. The results indicate a positive relationship. Meaning, as stock prices for Tesla, Google, Facebook, and Amazon increase, we also see increases in cryptocurrency prices. While these results are significant according to the p-values using robust standard errors, this model is still seriously flawed.  The main reason is that cryptocurrency prices are influenced by the price in previous days, weeks, or even years, leading to auto correlation. Another reason is that both stock prices and cryptocurrency prices always have a positive trend. This means over the four-year period studied, we expect the price for both stocks and cryptocurrencies to increase, seriously biasing the results.</p>
+								<p>In the election variable results, we can see that there is once again a positive relationship. However, according to the p-value, the results are not significant even at the 90% confidence interval. Similar to the Google Trends results, it is once again difficult to prove that the change in cryptocurrency prices is all attributed to the results on the 2020 election.  There are likely many factors that led to the spike in cryptocurrency prices shortly after the election and confidence about the future due to Joe Biden’s election may just be one of them.</p>
+								<div class='tableauPlaceholder' id='viz1639000593520' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;El&#47;Election_and_Prices&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Election_and_Prices&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;El&#47;Election_and_Prices&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1639000593520');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+								<br />
+								<h2>Fixed Effects Model Conclusion</h2>
+								<p> In the fixed effects model, the assumptions needed to determine a causal relationship between the independent variables on changes in cryptocurrency prices are impossible to prove.  However, in the lagged Google Trends index model, we may believe this relationship could possibly be causal. In this model. We see an increase on the lagged index coefficient.  This would mean Google searches for cryptocurrency terms increase before changes happen in cryptocurrency prices.  While this would need to be true in order to show causality, there are still many other factors at play. </p>
+								<p>First, we would be assuming individuals use Google to collect information before investing money into the market. However, many people Google searching for cryptocurrency are also doing it out of skepticism or curiosity, and not necessarily to invest.  Additionally, there are many other reasons (variables) that changes in cryptocurrency prices may occur. With a more sophisticated model and gigabytes more data (hourly instead of daily), perhaps a causal relationship between these variables would be possible. This leads me to believe these variables are highly correlated, and while a causal relationship may be possible, the fixed effects model is does not provide sufficient evidence to make this claim.</p>
+							</section>
+						<!-- Posts -->
+						<section class="posts">
+							<article>
+								<header>
+									<span class="date">November 4, 2021</span>
+									<h2><a href="#">Cryptocurrency<br />
+									Data Collection</a></h2>
+								</header>
+								<a href="post1.html" class="image fit"><img src="images/DataCollection.jpg" alt="" /></a>
+								<p>Overview of the cryptocurrency market and the importance of this type of research. I also discuss the process of collecting and manipulating cryptocurrency data.</p>
+								<ul class="actions special">
+									<li><a href="post1.html" class="button">Read More</a></li>
+								</ul>
+							</article>
+							<article>
+								<header>
+									<span class="date">November 22, 2021</span>
+									<h2><a href="#">Cryptocurrency<br />
+									Fixed Effects Model</a></h2>
+								</header>
+								<a href="post2.html" class="image fit"><img src="images/GoogleSearch.jpg" alt="" /></a>
+								<p>In this post I discuss the results of a fixed effects model using a balanced panel data set. In this post, I also showcase a transformable line graph that I built using Tableau.</p>
+								<ul class="actions special">
+									<li><a href="post2.html" class="button">Read More</a></li>
+								</ul>
+							</article>
+							<article>
+								<header>
+									<span class="date">December 1, 2021</span>
+									<h2><a href="#">Granger Causality<br />
+									</a></h2>
+								</header>
+								<a href="post3.html" class="image fit"><img src="images/Graph.jpg" alt="" /></a>
+								<p>What can a Granger causality test tell us about the relatonship between Google search, stock price and Bitcoin price data.</p>
+								<ul class="actions special">
+									<li><a href="post3.html" class="button">Read More</a></li>
+								</ul>
+							</article>
+							<article>
+								<header>
+									<span class="date">December 9, 2021</span>
+									<h2><a href="#">CryptoFord<br />
+									</a></h2>
+								</header>
+								<a href="post4.html" class="image fit"><img src="images/Benford.jpg" alt="" /></a>
+								<p>Using current cryptocurrency data, I show that digtial currency prices follow Benford's Law.</p>
+								<ul class="actions special">
+									<li><a href="post4.html" class="button">Read More</a></li>
+								</ul>
+							</article>
+					</div>
+
+				<!-- Copyright -->
+				<div id="copyright">
+					<ul><li>Website Created By Zachary Zeller</li></ul>
+				</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
